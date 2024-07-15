@@ -24,6 +24,8 @@ async def delete_after_delay(message: Message, delay):
 @Client.on_message(filters.text & filters.group & filters.incoming & ~filters.command(["verify", "connect", "id"]))
 async def search(bot, message):
     vj = database.find_one({"chat_id": ADMIN})
+    if vj == None:
+        return await message.reply("**Contact Admin Then Say To Login In Bot.**")
     User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
     await User.connect()
     f_sub = await force_sub(bot, message)
@@ -63,6 +65,8 @@ async def search(bot, message):
 async def recheck(bot, update):
     vj = database.find_one({"chat_id": ADMIN})
     User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
+    if vj == None:
+        return await update.message.edit("**Contact Admin Then Say To Login In Bot.**")
     await User.connect()
     clicked = update.from_user.id
     try:      
@@ -72,7 +76,7 @@ async def recheck(bot, update):
     if clicked != typed:
        return await update.answer("That's not for you! 👀", show_alert=True)
 
-    m=await update.message.edit("Searching..💥")
+    m=await update.message.edit("**Searching..💥**")
     id      = update.data.split("_")[-1]
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
