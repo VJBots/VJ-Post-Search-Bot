@@ -7,6 +7,8 @@ from pyrogram import Client, filters
 async def connect(bot, message):
     m=await message.reply("connecting..")
     vj = database.find_one({"chat_id": ADMIN})
+    if vj == None:
+        return await message.reply("**Contact Admin Then Say To Login In Bot.**")
     User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
     await User.connect()
     user = await User.get_me()
