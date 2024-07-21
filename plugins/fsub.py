@@ -81,7 +81,7 @@ async def f_sub_callback(bot, update):
     try:
        await bot.get_chat_member(f_sub, user_id)          
     except UserNotParticipant:
-       await update.answer("<b>I like your smartness..\nBut don't be over smart</b> 🤭", show_alert=True) # @subinps 😁
+       await update.answer("<b>I like your smartness..\nBut don't be over smart</b> 🤭", show_alert=True) # @kingvj01 😁
     except:       
        await bot.restrict_chat_member(chat_id=update.message.chat.id, 
                                       user_id=user_id,
