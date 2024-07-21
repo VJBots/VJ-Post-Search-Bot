@@ -55,6 +55,11 @@ async def connect(bot, message):
 
 @Client.on_message(filters.group & filters.command("disconnect"))
 async def disconnect(bot, message):
+    vj = database.find_one({"chat_id": ADMIN})
+    if vj == None:
+        return await message.reply("**Contact Admin Then Say To Login In Bot.**")
+    User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
+    await User.connect()
     m=await message.reply("Please wait..")   
     try:
        group     = await get_group(message.chat.id)
