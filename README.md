@@ -5,6 +5,8 @@
   VJ POST SEARCH BOT
 </h1>
 
+## Deploy Tutorial - [Video Link](https://youtu.be/ODGrhh1L0ls)
+
 ## Features
 
 - <b>connect multiple channel
@@ -20,6 +22,8 @@
 <b><details><summary>Tap On Me For See Credit</summary>
 
 💝 Credit Goes To [Tech VJ](https://telegram.me/Kingvj01) So Don't Forgot To Give Credit
+
+💘 Base Repo Credit [CyniteOfficial](https://github.com/CyniteOfficial)
 
 💖 And Thank You So Much To All Who Help In This Journey 💕
 
