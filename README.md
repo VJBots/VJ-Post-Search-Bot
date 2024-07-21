@@ -12,7 +12,8 @@
 - no telegram message length limit, added chunk
 - auto delete 
 - fully modified repo
-- no string session required ( login required by bot owner )</b>
+- no string session required ( login required by bot owner )
+- broadcast command ( for owner only )</b>
 
 ## Credit
 
