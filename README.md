@@ -5,6 +5,15 @@
   VJ POST SEARCH BOT
 </h1>
 
+## Features
+
+- <b>connect multiple channel
+- set fsub
+- no telegram message length limit, added chunk
+- auto delete 
+- fully modified repo
+- no string session required ( login required by bot owner )</b>
+
 ## Credit
 
 <b><details><summary>Tap On Me For See Credit</summary>
