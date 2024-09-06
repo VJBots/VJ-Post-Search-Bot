@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
+# Don't Remove Credit Tg - @Yuvrajku_bot
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Ask Doubt on telegram @Yuvrajku_bot
 
 # Never Give DATABASE_URI And BOT_TOKEN Here If Repo Is Forked Or Public Because This May Lead Account Ban.
 
@@ -13,4 +13,4 @@ BOT_TOKEN    = environ.get("BOT_TOKEN", "")
 DATABASE_URI = environ.get("DATABASE_URI", "")
 LOG_CHANNEL  = int(environ.get("LOG_CHANNEL", "-1002045377846"))
 ADMIN        = int(environ.get("ADMIN", "5213073489"))
-CHANNEL      = environ.get("CHANNEL", "@VJ_Botz")
+CHANNEL      = environ.get("CHANNEL", "@Yuvrajku_bot")
